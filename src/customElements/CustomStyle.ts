@@ -25,9 +25,10 @@ export const ButtonStyle = {
       px: "14px",
     },
     md: {
-      h: "40px",
-      fontSize: "lg",
-      px: "22px",
+      h: "46px",
+      fontSize: "sm",
+      fontWeight: 400,
+      px: "20px",
     },
     lg: {
       h: "45px",
@@ -56,7 +57,7 @@ export const ButtonStyle = {
 
   // default values for size and variant
   defaultProps: {
-    size: "lg", // default is md
+    size: "md", // default is md
     variant: "primary", // default is solid
     // colorScheme: 'primary', // default is gray
   },
