@@ -159,6 +159,7 @@ const TopBar: React.FC<{}> = () => {
                   background: "#3FD0D4",
                   color: "white",
                   padding: "2px",
+                  zIndex: 99,
                 }}
               >
                 <Box w="78%">

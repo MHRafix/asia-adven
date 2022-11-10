@@ -1,7 +1,7 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
-import Link from "next/link";
+import { Box, Flex } from "@chakra-ui/react";
 import React from "react";
 import { headerNavigation } from "../../../config/data/HeaderNavigation";
+import NavItem from "./NavItem";
 
 const Header: React.FC<{}> = () => {
   return (
@@ -10,20 +10,7 @@ const Header: React.FC<{}> = () => {
         <Box>Logo</Box>
         <Flex justifyContent="flex-start">
           {headerNavigation.map((nav: any, idx: number) => (
-            <Link key={idx} href={nav.mainHref} passHref>
-              <Text
-                mx={10}
-                cursor="pointer"
-                fontWeight="semibold"
-                fontSize={15}
-                _hover={{
-                  color: "primary",
-                  transition: ".3s",
-                }}
-              >
-                {nav.menuName}
-              </Text>
-            </Link>
+            <NavItem key={idx} nav={nav} />
           ))}
         </Flex>
         <Flex>Icons</Flex>

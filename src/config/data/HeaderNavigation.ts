@@ -1,4 +1,4 @@
-export const headerNavigation = [
+export const headerNavigation: INavigationData[] = [
   {
     menuName: "Home",
     mainHref: "/",
@@ -8,6 +8,8 @@ export const headerNavigation = [
     menuName: "Destinations",
     mainHref: "/destination_packages",
     isDropDown: true,
+    top: "100px",
+    left: "32.3%",
     dropDownList: [
       {
         subMenu: "Maldives",
@@ -27,6 +29,8 @@ export const headerNavigation = [
     menuName: "Information & FAQ",
     mainHref: "/information_faq",
     isDropDown: true,
+    top: "100px",
+    left: "46.3%",
     dropDownList: [
       {
         subMenu: "Tourist Visa",
@@ -50,6 +54,8 @@ export const headerNavigation = [
     menuName: "Blog",
     mainHref: "/blog",
     isDropDown: true,
+    top: "100px",
+    left: "63.6%",
     dropDownList: [
       {
         subMenu: "Visa Processing",
@@ -73,6 +79,8 @@ export const headerNavigation = [
     menuName: "All Events",
     mainHref: "/",
     isDropDown: true,
+    top: "100px",
+    left: "72.5%",
     dropDownList: [
       {
         subMenu: "Destinations",
