@@ -18,15 +18,21 @@ const TopBar: React.FC<{}> = () => {
   const [focus, setFocus] = useState<boolean>(false);
 
   return (
-    <Box bg="#1C1C1C">
-      <Flex
+    <Box bg="#1C1C1C" display={{ base: "none", md: "block" }}>
+      <Box
+        display={{ base: "block", lg: "flex" }}
         justifyContent="space-between"
         alignItems="center"
-        pl="1%"
+        px={{ base: "0%", lg: "0%" }}
+        pt={{ base: "1%", lg: "0%" }}
+        pl={{ base: "0%", lg: "1%" }}
         mx="auto"
         color="white"
       >
-        <Flex>
+        <Flex
+          justifyContent={{ base: "space-between", lg: "flex-start" }}
+          mb={{ base: 2, lg: 0 }}
+        >
           <a href="mailto:setsail@qode.com" target="_self">
             <Flex alignItems="center" mx={3}>
               <BsEnvelope color="#3FD0D4" size={16} /> &nbsp;&nbsp;
@@ -70,7 +76,10 @@ const TopBar: React.FC<{}> = () => {
             </Flex>
           </a>
         </Flex>
-        <Flex alignItems="center">
+        <Flex
+          alignItems="center"
+          justifyContent={{ base: "space-between", lg: "flex-start" }}
+        >
           <Flex>
             <Text
               mx={2}
@@ -164,18 +173,6 @@ const TopBar: React.FC<{}> = () => {
                     }}
                   >
                     English
-                    {/* {focus && (
-											<span
-												style={{
-													margin: 'auto',
-													display: 'block',
-													marginTop: '2px',
-													width: '49px',
-													height: '2px',
-													background: 'white',
-												}}
-											></span>
-										)} */}
                   </Text>
                   <Text
                     fontSize={14}
@@ -188,31 +185,18 @@ const TopBar: React.FC<{}> = () => {
                     }}
                   >
                     Bangla
-                    {/* {focus && (
-											<span
-												style={{
-													margin: 'auto',
-													display: 'block',
-													marginTop: '2px',
-													width: '49px',
-													height: '2px',
-													background: 'white',
-												}}
-											></span>
-										)} */}
                   </Text>
                 </Box>
               </motion.div>
             )}
+            <Link href="/acc" passHref>
+              <Button>
+                <BiUserCircle size={25} />
+              </Button>
+            </Link>
           </Box>
-
-          <Link href="/acc" passHref>
-            <Button>
-              <BiUserCircle size={25} />
-            </Button>
-          </Link>
         </Flex>
-      </Flex>
+      </Box>
     </Box>
   );
 };

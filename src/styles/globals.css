@@ -6,3 +6,7 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif !important;
 }
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #3fd0d4 !important;
+}
