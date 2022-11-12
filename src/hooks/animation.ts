@@ -22,3 +22,28 @@ export const slideDown = {
     transition: { duration: 0.3 },
   },
 };
+
+export const megaMenuDown = {
+  offscreen: {
+    y: -20,
+    height: 0,
+    opacity: 0.2,
+    transition: { duration: 0.3 },
+  },
+
+  onscreen: {
+    y: 0,
+    height: "auto",
+    opacity: 1,
+    transition: {
+      duration: 0.3,
+    },
+  },
+
+  exit: {
+    y: -20,
+    height: 0,
+    opacity: 0.2,
+    transition: { duration: 0.3 },
+  },
+};

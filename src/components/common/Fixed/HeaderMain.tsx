@@ -1,15 +1,14 @@
+import { Box } from "@chakra-ui/react";
 import React from "react";
-import HomeSlider from "../../custom/sections/sliders/HomeSlider";
 import Header from "./Header";
 import TopBar from "./TopBar";
 
 const HeaderMain: React.FC<{}> = () => {
   return (
-    <>
+    <Box position="absolute" top="0" width="100%" zIndex="99999">
       <TopBar />
       <Header />
-      <HomeSlider />
-    </>
+    </Box>
   );
 };
 

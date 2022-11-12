@@ -1,13 +1,13 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import React from "react";
 import { Autoplay, Controller, Pagination, Scrollbar, Zoom } from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/controller";
-// import 'swiper/css/navigation';
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/zoom";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const HomeSlider: React.FC<{}> = () => {
@@ -15,14 +15,7 @@ const HomeSlider: React.FC<{}> = () => {
     <Box>
       <Swiper
         // install Swiper modules
-        modules={[
-          // Navigation,
-          Pagination,
-          Scrollbar,
-          Autoplay,
-          Controller,
-          Zoom,
-        ]}
+        modules={[Pagination, Scrollbar, Autoplay, Controller, Zoom]}
         spaceBetween={50}
         slidesPerView={1}
         navigation
@@ -30,18 +23,143 @@ const HomeSlider: React.FC<{}> = () => {
       >
         <SwiperSlide
           style={{
-            backgroundImage: `url('https://raw.githubusercontent.com/MHRafix/ASIA-ADVANTURE-CLIENT-SIDE/main/src/Images/Slider_images/winter_city.jpg')`,
-            height: "550px",
+            backgroundImage: `url('https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/far-destinations-slider-img-2.jpg')`,
+            height: "580px",
+            width: "100%",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            transform: " translate(0px, 0px)",
+            visibility: "visible",
+            backgroundPositionY: "top",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Box textAlign="center">
+            <Text
+              my={-7}
+              color="white"
+              fontSize={30}
+              fontWeight="semibold"
+              fontFamily="cursive"
+            >
+              Go Out And
+            </Text>
+            <Text color="white" fontSize={126} fontWeight="bold" my={0}>
+              Discover The City
+            </Text>
+            <Text color="#FFFFFF" fontSize={18}>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula <br /> eget dolor. Aenean massa. Cum sociis Theme
+            </Text>
+          </Box>
+        </SwiperSlide>
+        <SwiperSlide
+          style={{
+            backgroundImage: `url('https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/cities-slide-1.jpg')`,
+            height: "580px",
             width: "100%",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             backgroundSize: "cover",
+            transform: " translate(0px, 0px)",
+            visibility: "visible",
+            backgroundPositionY: "top",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
-          Slide 1
+          <Box textAlign="center">
+            <Text
+              my={-7}
+              color="white"
+              fontSize={30}
+              fontWeight="semibold"
+              fontFamily="cursive"
+            >
+              Enjoy a
+            </Text>
+            <Text color="white" fontSize={126} fontWeight="bold" my={0}>
+              NewYork Autumn
+            </Text>
+            <Text color="#FFFFFF" fontSize={18}>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula <br /> eget dolor. Aenean massa. Cum sociis Theme
+            </Text>
+          </Box>
         </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide
+          style={{
+            backgroundImage: `url('https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/skiing-slider-img-1.jpg')`,
+            height: "580px",
+            width: "100%",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            transform: " translate(0px, 0px)",
+            visibility: "visible",
+            backgroundPositionY: "top",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Box textAlign="center">
+            <Text
+              my={-7}
+              color="white"
+              fontSize={30}
+              fontWeight="semibold"
+              fontFamily="cursive"
+            >
+              From Kashmir
+            </Text>
+            <Text color="white" fontSize={126} fontWeight="bold" my={0}>
+              Snow Adventure
+            </Text>
+            <Text color="#FFFFFF" fontSize={18}>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula <br /> eget dolor. Aenean massa. Cum sociis Theme
+            </Text>
+          </Box>
+        </SwiperSlide>
+
+        <SwiperSlide
+          style={{
+            backgroundImage: `url('https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/cities-slide-3.jpg')`,
+            height: "580px",
+            width: "100%",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            transform: " translate(0px, 0px)",
+            visibility: "visible",
+            backgroundPositionY: "top",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Box textAlign="center">
+            <Text
+              my={-7}
+              color="white"
+              fontSize={30}
+              fontWeight="semibold"
+              fontFamily="cursive"
+            >
+              Go & Discover
+            </Text>
+            <Text color="white" fontSize={126} fontWeight="bold" my={0}>
+              Wonderful Cities
+            </Text>
+            <Text color="#FFFFFF" fontSize={18}>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula <br /> eget dolor. Aenean massa. Cum sociis Theme
+            </Text>
+          </Box>
+        </SwiperSlide>
       </Swiper>
     </Box>
   );

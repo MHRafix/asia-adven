@@ -1,0 +1,3 @@
+- What is TS ?
+ans: Typescript is an object oriented and stronglu typed prgramming language.
+which is a supperset of js. Typescript was desinged by anders  hejlsberg at microsoft.ew limitation of javascript for  devloping large scale applications at microsoft and among it customers let to the ceeation of Typescript.because of the deficulties working based of javascript code. there was a dem

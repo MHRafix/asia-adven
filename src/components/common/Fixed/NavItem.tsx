@@ -1,21 +1,24 @@
 import { Box, Text } from "@chakra-ui/react";
-import { motion } from "framer-motion";
 import Link from "next/link";
 import React, { useState } from "react";
-import { slideDown } from "../../../hooks/animation";
 
 const NavItem: React.FC<{ nav: any }> = ({ nav }) => {
   const [focus, setFocus] = useState<boolean>(false);
   const { menuName, mainHref, dropDownList, top, left } = nav;
 
   return (
-    <Box>
-      <Link
-        href={mainHref}
-        passHref
-        onMouseOver={() => setFocus((state: boolean) => false)}
-      >
+    <Box
+      position="relative"
+      onMouseLeave={
+        () =>
+          // setTimeout(() => {
+          setFocus((state: boolean) => false)
+        // }, 200)
+      }
+    >
+      <Link href={mainHref} passHref>
         <Text
+          onMouseOver={() => setFocus((state: boolean) => true)}
           mx={10}
           cursor="pointer"
           fontWeight="semibold"
@@ -28,34 +31,33 @@ const NavItem: React.FC<{ nav: any }> = ({ nav }) => {
           {menuName}
         </Text>
       </Link>
-      {focus && (
-        <Box
-        // onMouseOut={() => setFocus((state: boolean) => false)}
-        >
-          {dropDownList?.length &&
-            dropDownList.map((dropDown: ISubmenu, idx: number) => (
-              <motion.div
-                key={idx}
-                initial="offscreen"
-                whileInView="onscreen"
-                exit={slideDown.exit}
-                variants={slideDown}
-                style={{
-                  // width: '116.10px',
-                  position: "absolute",
-                  top: top,
-                  left: left,
-                  background: "#fff",
-                  // 	color: 'white',
-                  // 	padding: '2px',
-                  zIndex: 99,
-                }}
-              >
-                <Box>Hello</Box>
-              </motion.div>
-            ))}
-        </Box>
-      )}
+      {/* {focus && (
+				<>
+					{dropDownList?.length && (
+						<Box>
+							<motion.div
+								initial='offscreen'
+								whileInView='onscreen'
+								exit={megaMenuDown.exit}
+								variants={megaMenuDown}
+								style={{
+									position: 'absolute',
+									padding: '10px',
+									top: top,
+									left: left,
+									background: 'white',
+									boxShadow:
+										' 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+								}}
+							>
+								{/* {dropDownList.map((dropDown: ISubmenu, idx: number) => (
+									<Box key={idx}>{dropDown.subMenu}</Box>
+								))} 
+							</motion.div>
+						</Box>
+					)}
+				</>
+			)} */}
     </Box>
   );
 };

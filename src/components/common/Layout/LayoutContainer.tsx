@@ -28,7 +28,7 @@ const LayoutContainer: React.FC<{
       </Box>
       {/* app body is here */}
       <main>
-        <Box w="95%" mx="auto">
+        <Box w="100%" mx="auto">
           {children}
         </Box>
 
@@ -43,7 +43,6 @@ const LayoutContainer: React.FC<{
           <ScrollToTop
             smooth={true}
             top={300}
-            color="#fff"
             component={<IoIosArrowUp />}
             id="gotop_client_btn"
           />

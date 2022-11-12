@@ -10,3 +10,44 @@ body {
 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #3fd0d4 !important;
 }
+
+#gotop_client_btn {
+  background: #3fd0d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 99999999px;
+  font-size: 25px;
+  z-index: 9999999999;
+}
+
+#gotop_client_btn:hover {
+  background: white;
+  transition: 0.3s;
+  color: #3fd0d4;
+}
+
+select option:hover {
+  background-color: #3fd0d4 !important;
+}
+
+input#destination::placeholder {
+  color: #a4a4a4;
+}
+
+input#destination {
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  margin-bottom: 35px;
+  /* background: radial-gradient(black, transparent); */
+}
+
+span.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background: #3fcfd464;
+  opacity: 1.5;
+}

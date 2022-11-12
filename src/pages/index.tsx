@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import LayoutContainer from "../components/common/Layout/LayoutContainer";
+import HomeMain from "../components/custom/main/HomeMain";
 
 const Home: NextPage = () => {
   return (
@@ -9,7 +10,7 @@ const Home: NextPage = () => {
         title="Feel the threel"
         description='This is "Asia adventure Limited" home page.'
       >
-        <Box>Home page document</Box>
+        <HomeMain />
       </LayoutContainer>
     </Box>
   );

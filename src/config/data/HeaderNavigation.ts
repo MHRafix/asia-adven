@@ -8,8 +8,8 @@ export const headerNavigation: INavigationData[] = [
     menuName: "Destinations",
     mainHref: "/destination_packages",
     isDropDown: true,
-    top: "100px",
-    left: "32.3%",
+    top: "20px",
+    left: "30.3%",
     dropDownList: [
       {
         subMenu: "Maldives",
@@ -29,7 +29,7 @@ export const headerNavigation: INavigationData[] = [
     menuName: "Information & FAQ",
     mainHref: "/information_faq",
     isDropDown: true,
-    top: "100px",
+    top: "20px",
     left: "46.3%",
     dropDownList: [
       {
@@ -54,7 +54,7 @@ export const headerNavigation: INavigationData[] = [
     menuName: "Blog",
     mainHref: "/blog",
     isDropDown: true,
-    top: "100px",
+    top: "20px",
     left: "63.6%",
     dropDownList: [
       {
@@ -79,7 +79,7 @@ export const headerNavigation: INavigationData[] = [
     menuName: "All Events",
     mainHref: "/",
     isDropDown: true,
-    top: "100px",
+    top: "20px",
     left: "72.5%",
     dropDownList: [
       {
