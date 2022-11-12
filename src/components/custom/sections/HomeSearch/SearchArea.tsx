@@ -3,6 +3,7 @@ import { Form, Formik } from "formik";
 import React, { useState } from "react";
 import { AiOutlineFieldTime } from "react-icons/ai";
 import { MdOutlineShareLocation } from "react-icons/md";
+import { BsUiRadiosGrid } from "react-icons/bs";
 import * as Yup from "yup";
 import {
   FormikSelectFieldS,
@@ -68,7 +69,7 @@ const SearchArea: React.FC<{}> = () => {
                 { optName: "Low", value: "low" },
                 { optName: "Budget", value: "budget" },
               ]}
-              icon={<AiOutlineFieldTime size={25} color="#A4A4A4" />}
+              icon={<BsUiRadiosGrid size={25} color="#A4A4A4" />}
             />
 
             <FormikSelectFieldS
