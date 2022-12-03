@@ -23,6 +23,21 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   z-index: 9999999999;
 }
 
+.scroll-to-top {
+  background-color: white;
+  right: 40px;
+  bottom: 40px;
+  position: fixed;
+  right: 10px !important;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 7px;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 9px 25px 0 rgba(132, 128, 177, 0.28);
+  border: none;
+}
+
 #gotop_client_btn:hover {
   background: white;
   transition: 0.3s;
@@ -42,7 +57,6 @@ input#destination {
 
 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
   margin-bottom: 35px;
-  /* background: radial-gradient(black, transparent); */
 }
 
 span.swiper-pagination-bullet {

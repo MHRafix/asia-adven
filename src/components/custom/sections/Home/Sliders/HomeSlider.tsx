@@ -23,6 +23,74 @@ const HomeSlider: React.FC<{}> = () => {
       >
         <SwiperSlide
           style={{
+            backgroundImage: `url('https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/summertime-background-img-2.jpg')`,
+            height: "580px",
+            width: "100%",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            transform: " translate(0px, 0px)",
+            visibility: "visible",
+            backgroundPositionY: "top",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Box textAlign="center">
+            <Text
+              my={-7}
+              color="white"
+              fontSize={30}
+              fontWeight="semibold"
+              fontFamily="cursive"
+            >
+              Go Out And
+            </Text>
+            <Text color="white" fontSize={126} fontWeight="bold" my={0}>
+              Discover The City
+            </Text>
+            <Text color="#FFFFFF" fontSize={18}>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula <br /> eget dolor. Aenean massa. Cum sociis Theme
+            </Text>
+          </Box>
+        </SwiperSlide>
+        <SwiperSlide
+          style={{
+            backgroundImage: `url('https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/summertime-background-img-6.jpg')`,
+            height: "580px",
+            width: "100%",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            transform: " translate(0px, 0px)",
+            visibility: "visible",
+            backgroundPositionY: "top",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Box textAlign="center">
+            <Text
+              my={-7}
+              color="white"
+              fontSize={30}
+              fontWeight="semibold"
+              fontFamily="cursive"
+            >
+              Go Out And
+            </Text>
+            <Text color="white" fontSize={126} fontWeight="bold" my={0}>
+              Discover The City
+            </Text>
+            <Text color="#FFFFFF" fontSize={18}>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula <br /> eget dolor. Aenean massa. Cum sociis Theme
+            </Text>
+          </Box>
+        </SwiperSlide>
+        <SwiperSlide
+          style={{
             backgroundImage: `url('https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/far-destinations-slider-img-2.jpg')`,
             height: "580px",
             width: "100%",

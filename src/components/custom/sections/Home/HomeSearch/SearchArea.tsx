@@ -2,13 +2,13 @@ import { Box, Button } from "@chakra-ui/react";
 import { Form, Formik } from "formik";
 import React, { useState } from "react";
 import { AiOutlineFieldTime } from "react-icons/ai";
-import { MdOutlineShareLocation } from "react-icons/md";
 import { BsUiRadiosGrid } from "react-icons/bs";
+import { MdOutlineShareLocation } from "react-icons/md";
 import * as Yup from "yup";
 import {
   FormikSelectFieldS,
   FormikTextFieldS,
-} from "../../../../lib/Formik/FormFields/Fields";
+} from "../../../../../lib/Formik/FormFields/Fields";
 
 const SearchArea: React.FC<{}> = () => {
   const [processing, setProcessing] = useState<boolean>(false);
@@ -69,7 +69,7 @@ const SearchArea: React.FC<{}> = () => {
                 { optName: "Low", value: "low" },
                 { optName: "Budget", value: "budget" },
               ]}
-              icon={<BsUiRadiosGrid size={25} color="#A4A4A4" />}
+              icon={<BsUiRadiosGrid color="#A4A4A4" />}
             />
 
             <FormikSelectFieldS
