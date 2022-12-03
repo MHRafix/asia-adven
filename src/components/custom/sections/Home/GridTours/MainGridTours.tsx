@@ -4,7 +4,50 @@ import SectionTitle from "../../../../common/SectionTitle/SectionTitle";
 import TourGridCard from "./TourGridCard";
 
 const MainGridTours: React.FC<{}> = () => {
-  const servicesData = [1, 2, 3, 4, 5, 6];
+  const servicesData = [
+    {
+      destinationName: "Taragoanna",
+      backgroundImage:
+        "https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-40-650x650.jpg",
+      rating: 5,
+      price: 1740,
+    },
+    {
+      destinationName: "Madrid",
+      backgroundImage:
+        "https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-41-650x650.jpg",
+      rating: 5,
+      price: 1740,
+    },
+    {
+      destinationName: "Barcelona",
+      backgroundImage:
+        "https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-42-650x650.jpg",
+      rating: 5,
+      price: 1740,
+    },
+    {
+      destinationName: "Koahsiung",
+      backgroundImage:
+        "https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-43-650x650.jpg",
+      rating: 5,
+      price: 1740,
+    },
+    {
+      destinationName: "Taipei",
+      backgroundImage:
+        "https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-44-650x650.jpg",
+      rating: 5,
+      price: 1740,
+    },
+    {
+      destinationName: "Saminyak",
+      backgroundImage:
+        "https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-47-650x650.jpg",
+      rating: 5,
+      price: 1740,
+    },
+  ];
   return (
     <Box my={16}>
       <SectionTitle>Perfect Holidays</SectionTitle>

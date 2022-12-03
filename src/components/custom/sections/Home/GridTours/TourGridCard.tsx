@@ -1,18 +1,41 @@
-import { GridItem } from "@chakra-ui/react";
+import { Box, GridItem, Text } from "@chakra-ui/react";
+import { HiStar } from "react-icons/hi";
 
 const TourGridCard: React.FC<{ tourData: any }> = ({ tourData }) => {
   return (
     <GridItem
-      textAlign="center"
+      display="flex"
+      alignItems="end"
+      w="252px"
+      h="252px"
+      p={5}
       bg="#fff"
       shadow="lg"
       py={5}
       px={2}
-      bgImage="url('https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-40-650x650.jpg')"
+      bgImage={`url(${tourData.backgroundImage})`}
       backgroundPosition="center"
       backgroundSize="cover"
     >
-      Hello
+      <Box>
+        <Text fontWeight={700} fontSize={18} color="white">
+          {tourData.destinationName}
+        </Text>
+
+        <Box
+          w="100%"
+          display="flex"
+          alignItems="center"
+          justifyContent="flex-end"
+        >
+          <Text color="white" display="flex" alignItems="center">
+            <HiStar size={20} /> &nbsp; {tourData.rating} Good
+          </Text>
+          <Text fontWeight={700} fontSize={18} color="white">
+            $ {tourData.price}
+          </Text>
+        </Box>
+      </Box>
     </GridItem>
   );
 };
